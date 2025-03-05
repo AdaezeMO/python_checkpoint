@@ -397,7 +397,16 @@ else, print, get out
 #write a python function that will take a number and length and prints 
 #the multiplication table of the number up to the given length
 
-def multiplication_table(number = 2, length = 10):
-    for num in range(1, length+1, 2):
-        print(f"{number} X {num} = {number*num}")
-multiplication_table(2, 10)
+# def multiplication_table(number = 2, length = 10):
+#     for num in range(1, length+1, 2):
+#         print(f"{number} X {num} = {number*num}")
+# multiplication_table(2, 10)
+
+# def multiplication_table(a, b):
+#     result = a * b
+#     return result
+
+# result = multiplication_table(5, 10)
+# print(result)
+
+
