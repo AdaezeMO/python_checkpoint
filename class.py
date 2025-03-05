@@ -410,3 +410,63 @@ else, print, get out
 # print(result)
 
 
+"""
+create a python function that will take a number and checks if the number is even or not. 
+if the number is even, the functin should return true, otherwise it should return false
+"""
+# def even_number_checker(number):
+#     if number % 2 == 0:               #percentage sign returns the remainder when a number is divided
+#         return True
+#     else:
+#         return False
+    
+# result = even_number_checker(3)
+# print(result)
+
+
+
+"""
+how do you create an object in python 
+"""
+class Dog:
+    def __init__(self, name, color, gender):
+        self.name = name
+        self.color = color
+        self.gender = gender
+    def __str__(self):
+        return f"The name of the dog is: {self.name}\n \
+              And it is a {self.gender} dog\n \
+                and it is {self.color} in color"
+
+    def change_properties(self, new_name, new_color, new_gender):
+        self.name = new_name
+        self.color = new_color
+        self.gender = new_gender 
+
+    
+    #dding actions or methods
+    def bark(self):
+        return f"{self.name} is barking woof! woof!"
+    def eat(self):
+        return f"{self.name} is eating munch! munch!"
+    def walk(self):
+        return f"{self.name} is walking"
+    
+
+#creating an instance of the class Dog
+dog1 = Dog(name="Rotweiler", color="brown", gender="male")
+dog2 = Dog(name="German Shepherd", color="black", gender="female")
+dog3 = Dog(name="Pitbull", color="white", gender="male")
+
+dog1.change_properties(new_name="pitbull", new_color="red", new_gender="female")
+
+print(dog1)
+# print(dog2)
+# print(dog3)
+# print (dog1.eat())
+# print (dog2.eat())
+
+#OOP helps you model real life objects in codes
+#when you want custom print messages use  (def __str__(self):) in class
+#when you want to initialize a class use __init__(self, name
+
